@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("./AvenirNext-Regular.woff2") format("woff2"), url("./AvenirNext-Regular.woff") format("woff"), url("./AvenirNext-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("./AvenirNext-Italic.woff2") format("woff2"), url("./AvenirNext-Italic.woff") format("woff"), url("./AvenirNext-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("./AvenirNext-Demi.woff2") format("woff2"), url("./AvenirNext-Demi.woff") format("woff"), url("./AvenirNext-Demi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src:url("./AvenirNext-Bold.woff2") format("woff2"), url("./AvenirNext-Bold.woff") format("woff"), url("./AvenirNext-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("./AvenirNext-Heavy.woff2") format("woff2"), url("./AvenirNext-Heavy.woff") format("woff"), url("./AvenirNext-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --color-orange:        #EE7F4B;
+  --color-pink:          #E9506E;
+  --color-green:         #00A95C;
+  --color-white:         #FFFFFF;
+  --color-yellow:        #FFCE2E;
+  --color-turqoise:      #00A49A;
+  --color-purple:        #474DA4;
+  --color-grey-darkest:  #333;
+  --color-grey-dark:     #666;
+  --color-grey:          #999;
+  --color-grey-light:    #ccc;
+  --color-grey-lighter:  #eee;
+  --color-grey-lightest: #f6f6f6;
+
+  --baseline: 1.636363636;
+  --text-base: 1.375rem;
+
+  --ratio: 1.1834;
+  --gutter: 2rem;
+  --text-sm: calc(var(--text-base) / var(--ratio));
+  --text-xs: calc(var(--text-sm) / var(--ratio));
+  --text-lg: calc(var(--text-base) * var(--ratio));
+  --text-xl: calc(var(--text-lg) * var(--ratio));
+  --text-2xl: calc(var(--text-xl) * var(--ratio));
+  --text-3xl: calc(var(--text-2xl) * var(--ratio));
+  --text-4xl: calc(var(--text-3xl) * var(--ratio));
+  --text-5xl: calc(var(--text-4xl) * var(--ratio));
+  --text-5xl: calc(var(--text-5xl) * var(--ratio));
+
+  --screen-sm-min: 48rem;
+  --screen-md-min: 62rem;
+  --screen-lg-min: 75rem;
+  --screen-xl-min: 87.5rem;
+
+  --border-radius: 5px;
+}
+
+@media (max-width: 62rem) {
+  --baseline: 1.5;
+  --text-base: 1.125rem;
+}
+@media (min-width: 62rem) {
+  --baseline: 1.568181818;
+  --text-base: 1.25rem;
+}
+@media (min-width: 75rem) {
+  --baseline: 1.636363636;
+  --text-base: 1.375rem;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: var(--color-grey-darkest);
+  font-family: "Avenir Next", sans-serif !important;
+  line-height: var(--baseline);
+  font-size: var(--text-base);
+}
+
+.intro.block .body h1,
+.intro.block .body h2,
+.intro.block .body h2,
+.block h1,
+.block h2,
+.block h3,
+.block h4,
+h1, h2, h3, h4,
+p {
+  font-family: "Avenir Next", sans-serif !important;
+  color: var(--color-grey-darkest);
+}
+
+.block.intro img[src$=".svg"] {
+  width: 300px !important;
+}
+
+.block .body .company-logo img,
+.block.intro .add-logo, .block.intro .company-logo {
+  max-width: 300px !important;
+}
+
+.intro.block .body h1 {
+  font-weight: 900 !important;
+}
+
+.block [data-medium-editor-element] a {
+  color: var(--grey-darkest) !important;
+  border-bottom: none !important;
+  text-decoration: underline !important;
+}
